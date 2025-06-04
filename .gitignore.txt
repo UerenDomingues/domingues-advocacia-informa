@@ -1,0 +1,15 @@
+# Flutter
+.dart_tool/
+.packages
+.pub-cache/
+build/
+ios/Pods/
+android/.gradle/
+.idea/
+.vscode/
+*.iml
+
+# Arquivos de sistema
+*.log
+*.lock
+*.DS_Store
