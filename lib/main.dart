@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/login_screen.dart'; // Certifique-se de que este caminho está correto
 
 void main() {
-  runApp(DominguesApp());
+  runApp(const MyApp());
 }
 
-class DominguesApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Domingues Advocacia Informa',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
+      title: 'Domingues Advocacia Informa',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const LoginScreen(),
     );
   }
 }
